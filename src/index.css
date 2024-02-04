@@ -6,3 +6,8 @@ body {
   background-image: url('./assets/bg-stars.png');
   background-color: #0E0C14;
 }
+@media screen and (max-height: 1024px) and (min-width: 768px) {
+  .height-based-width {
+    width: 20rem !important;
+  }
+}
