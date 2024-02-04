@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url('./assets/bg-stars.png');
+  background-color: #0E0C14;
+}

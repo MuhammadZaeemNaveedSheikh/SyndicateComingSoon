@@ -1,7 +1,9 @@
+import Gradient from "./assets/bg-gradient.svg"
+
 function App() {
   return (
     <>
-      <h1 className="font-bold text-3xl">Hello World</h1>
+      <img src={Gradient} className="absolute -top-32" />
     </>
   )
 }
