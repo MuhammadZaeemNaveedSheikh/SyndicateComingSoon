@@ -1,5 +1,6 @@
 import Accordion from "./Accordion";
 import Form from "./Form";
+import Timer from "./Timer";
 
 const Body = () => {
   const text_gradient =
@@ -12,14 +13,16 @@ const Body = () => {
       <h1
         className={
           text_gradient +
-          "text-center text-3xl md:text-4xl font-semibold text-transparent bg-clip-text md:flex md:flex-col gap-2"
+          "text-center text-3xl md:text-4xl font-semibold text-transparent bg-clip-text max-w-[660px]"
         }
       >
-        Join the waitlist for the {" "}
+        Pre-register for a {" "} 
         <span className={highlight_gradient + " bg-clip-text text-transparent"}>
-          Syndicate!
-        </span>
+        40% Discount
+        </span> {" "}
+        on your first challenge with Syndicate!
       </h1>
+      <Timer />
       <Form />
       <div className="w-full max-w-[600px] mx-auto">
         <Accordion />

@@ -83,16 +83,17 @@ const Form = () => {
           <input
             type="email"
             id="input-group-1"
-            className=" border text-sm rounded-lg block w-full ps-10 p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white opacity-75 focus:ring-blue-500 focus:border-blue-500 focus:outline-none focus:opacity-100"
+            className=" border text-sm rounded-lg block w-full ps-10 p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 focus:outline-none focus:opacity-100 transition-all autofill:shadow-[inset_0_0_0px_1000px_rgba(0,0,0,0.7)]"
             placeholder="name@email.com"
             ref={emailRef}
+            autoComplete={false}
             required
           />
         </div>
-        {err && <p className="text-sm text-red-600 mb-6">{err}</p>}
-        <p className="text-sm text-green-500 mb-6">{success && "Registered successfully"}</p>
+        {err && <p className="text-sm text-red-600 mt-2 mb-6">{err}</p>}
+        <p className="text-sm text-green-500 mt-2 mb-6">{success && "Registered successfully. Your discount code will be sent on launch date to the email you have provided"}</p>
         <button
-          className="bg-[#986AEB] w-full py-2 rounded-lg opacity-90 hover:opacity-100 hover:shadow-lg hover:shadow-[#976aeb31] transition-all flex gap-2 justify-center items-center"
+          className="bg-[#986AEB] w-full py-2 rounded-lg opacity-90 hover:opacity-100 hover:shadow-lg hover:shadow-[#976aeb31] transition-all flex gap-2 justify-center items-center disabled:bg-opacity-20"
           disabled={loading}
           type="submit"
         >
@@ -109,7 +110,7 @@ const Loader = () => {
     <div role="status">
       <svg
         aria-hidden="true"
-        className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+        className="w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
