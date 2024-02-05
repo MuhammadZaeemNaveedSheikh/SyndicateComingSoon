@@ -113,3 +113,14 @@ input:focus {
     background-size: 200%;
   }
 }
+
+.img-glow-shadow {
+  filter: drop-shadow(0px 0px 20px #5810df);
+}
+
+.inner-glow {
+  transition: 200ms all;
+}
+.inner-glow:hover {
+  box-shadow: 0px 0px 20px 0px #3e41dda1 inset;
+}

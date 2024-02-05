@@ -1,4 +1,4 @@
-import Accordion from "./Accordion";
+import Perks from "./Perks";
 import Form from "./Form";
 import Timer from "./Timer";
 
@@ -16,17 +16,15 @@ const Body = () => {
           "text-center text-3xl md:text-4xl font-semibold text-transparent bg-clip-text max-w-[660px]"
         }
       >
-        Pre-register for a {" "} 
+        Pre-register for a{" "}
         <span className={highlight_gradient + " bg-clip-text text-transparent"}>
-        40% Discount
-        </span> {" "}
+          40% Discount
+        </span>{" "}
         on your first challenge with Syndicate!
       </h1>
       <Timer />
       <Form />
-      <div className="w-full max-w-[600px] mx-auto">
-        <Accordion />
-      </div>
+      <Perks />
     </div>
   );
 };
