@@ -10,7 +10,7 @@ import Icon7 from "../assets/7.svg"
 const Perks = () => {
   const perks = [
     {
-      statement: "6% Profit Target Phase 1 and Phase2",
+      statement: "6% Profit Target Phase 1 and Phase 2",
       icon: Icon1
     },
     {
