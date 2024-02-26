@@ -18,7 +18,7 @@ const Body = () => {
       >
         Pre-register for a{" "}
         <span className={highlight_gradient + " bg-clip-text text-transparent"}>
-          40% Discount
+          50% Discount
         </span>{" "}
         on your first challenge with Syndicate!
       </h1>
