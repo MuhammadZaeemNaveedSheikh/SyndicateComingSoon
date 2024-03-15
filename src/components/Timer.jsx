@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 
 const Timer = () => {
-    const targetDate = new Date('March 11, 2024 23:59:59').getTime();
+    const targetDate = new Date('April 1, 2024 00:00:00').getTime();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   function calculateTimeRemaining() {
